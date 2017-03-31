@@ -1,146 +1,278 @@
+/******************************
+Mobile First (attempt)
+******************************/
+
 body {
   text-align: center;
   background-color: #afa;
+/*   width: 100%; */
+/*   height: 100%; */
+/*   margin: 0; */
+/*   padding: 0; */
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 section {
- /*Do I need to put height?
-	height: 1000px; */
-	clear: both;
+/* 	height: 1000px; */
+  clear: both;
 	background-color: #afa;
-	color: #020;
+  color: #020;
 }
 footer {
-	height: 70px;
-	/*   width: 100%; */
-	background-color: #151;
-	margin-bottom: -100px;
-	margin-left: -8px;
-	margin-right: -8px;
-	padding: 0;
+  height: 70px;
+/*   width: 100%; */
+  background-color: #151;
+  margin-bottom: -100px;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding: 0;
 }
 ul {
-	display: block;
-	height: 100%;
+  display: block;
+  height: 100%
+}
+/* ul {
 	transition-property: all;
 	transition-duration: 1.2s;
 	transition-timing-function: ease;
 	transition-delay: initial;
-} 
+} */
 .section {
-	padding: 2%;
+/*   padding: 2%; */
 }
 .row {
-	clear: both;
-	margin-left: 12px;
-	margin-top: 12px;
-	background-color: #afa;
+  clear: both;
+  margin-left: 12px;
+  margin-top: 12px;
+  background-color: #afa;
+}
+.button {
+  background-color: #8CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 28px;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 2px 0;
+}
+.button:hover {
+  background-color: #8CAF80; 
 }
 .menu {
 	background-color: #151;
-	position: fixed;
+  position: fixed;
 	height: 70px;
-	width: 100%;
-	line-height: 38px;
-	margin-top: -70px;
-	margin-left: -8px;
-	/*   z-index: 5; */
+  width: 100%;
+  line-height: 38px;
+  margin-top: -70px;
+  margin-left: -8px;
+  z-index: 5;
   
 }
 .menu ul {
 	list-style-type: none;
-	position: initial;
-	background-color: #151;
-	/*   margin: 0 0; */
-	padding: 0;
-	height: auto;
-	/*   z-index: 10; */
-	/*   margin: 0 70px; */
+  position: initial;
+  background-color: #151;
+  font-size: 0;
+  margin: 16px 0;
+  padding: 0;
+  height: auto;
+  z-index: 10;
+/*   margin: 0 70px; */
 }
-li.menu-item {
-	display: inline-block;
-	background-color: #151;
-	padding: 0 8%;
-	/*   padding: ; */
-}
-li.menu-logo {
-	left: 0;
+.menu-item {
+  display: inline-block;
+/*   background-color: #000; */
+  padding: 0 0%;
+/*   padding: ; */
 }
 .menu-item a{
-	text-decoration: none;
-	/*   background-color: #151; */
-	color: #efe;
-	font-size: 1.5rem;
-	padding: 0 0.5rem;
+  height: 70px;
+  text-decoration: none;
+  background-color: #151;
+  color: #efe;
+  font-size: 1.5rem;
+  padding: 1.30rem 1rem 1.32rem 1rem;
 }
+ .menu-logo { 
+  height: 70px;
+/*   background-color: #fff; */
+  margin: -8px 0 0 0;
+	position: fixed;
+  left: 10%;
+}
+/* li.menu-logo a {
+  height: 70px;
+} */
 .intro {
-	margin-top : 70px;
+  margin-top : 70px;
+  margin-left: -8px;
+  margin-right: -8px;
+  color: #402;
+  background-color: #afa;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Midwinter_sunshine_in_Bushy_Park%2C_Teddington_P2120008.JPG/2048px-Midwinter_sunshine_in_Bushy_Park%2C_Teddington_P2120008.JPG);
+  /* Want to put an acknowledgement in the corner of the picture */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.h1-title {
-	color: #402;
-	background-color: #afa;
+.intro-heading {
+  color: #ed260b;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  padding-top: 150px;
+  padding-left: 220px;
+  padding-bottom: 180px;
+}
+.intro-motivation {
+  color: #fff;
+  width: 400px;
+  padding-top: 50px;
+  padding-left: 50px
+}
+.parkSectionContainer {
+/*   background-color: #333; */
+  height: 400px;
+}
+.parkUnitContainer {
+/*   height: 200px; */
+/*   background-color: #444; */
 }
 .timeline-nav{
-  background-color: #ddd;
+/*   background-color: #ddd; */
 	height : 200px;
 	width : 15%;
 	float : left;
 	border : 1px #333;
 	padding: 5px;
-	margin: 5px;
+	margin: 5px 0;
 	text-align: center;
 }
-.content-image {
-	background-color: #ddd;
+.content-image-container {
+/* 	background-color: #222; */
 	height : 200px;
-	width : 28%;
+/* 	position: relative; */
+  width : 40%;
 	float : left;
-	border : 1px #333;
-	padding: 5px;
-	margin: 5px;
+/* 	border : 1px #333; */
+/* 	padding: 5px; */
+	margin: 5px 0;
 	text-align: center;
+}
+.content-image-container img {
+/*   position: absolute; */
+/*   height: 100%; */
+  max-width: 100%;
+  width: auto;
+  max-height: 100%;
+  height: auto;
+/*   position: absolute; */
+  top: 10%;
+  
 }
 .content-text {
-	background-color: #ddd;
+/* 	background-color: #ddd; */
 	height : 200px;
-	width : 23%;
+	width : 40%;
 	float : left;
 	border : 1px #333;
 	padding: 5px;
-	margin: 5px;
+	margin: 5px 0;
 	text-align: center;
+  font-family: sans-serif;
 }
-#parks {
-  height: 1000px;
+#intro {
+  height: 600px;
 }
-#aboutMe,
-#contact {
-  height: 374px;
+#aboutMe {
+  height: 494px;
   padding-top: 70px;
 }
-.park {
-  background-color: #afa;
+p.profile {
+  padding: 0 10%;
+  font-size: 1.10rem;
+/*   font-weight: 700; */
+  font-family: sans-serif, Helvetica;
 }
-@media screen and (max-width: 768px){
+p.profile a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.park-top {
+  padding-top: 100px;
+}
+/* @media screen and (max-width: 768px){
   .menu {
 /*     background-color: #151; */
 /*     position: fixed; */
 /*     height: 70px; */
-    width: 100%;
+/*     width: 100%;
     line-height: 38px;
     margin-top: -70px;
-    margin-left: -8px;
-  }
+    margin-left: -8px; */
+/*     overflow: hidden; */
+/*   }
 	.timeline-nav{
 		width : 15%;
 	}
-	.content-image {
-		width : 50%;
+	#content-image-container {
+		width : 48%;
 	}
 	.content-text {
 		width : 40%;
-	}
+	} */
+/* } */
+@media screen and (max-width: 768px){
+  .content-image-container {
+    width: 70%;
+  }
+  .content-text {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+  }
+ p.profile {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px){
+  h1 {
+    font-size: 3rem;
+  }
+  .parkSectionContainer {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .parkUnitContainer {
+    width: 100%;
+  }
+  .content-text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1000px){
+  .parkSectionContainer {
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px){
+  .parkSectionContainer {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 

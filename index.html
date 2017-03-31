@@ -1,71 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Daniel Ansell one-pager</title>
-		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-	</head>
-	<body>
-		<nav class = "menu">
-			<ul>
-				<li class= "menu-item menu-logo">
-          <a href = "#parks"><img src = "img/ParksTree.png"></a>
-				<li class= "menu-item">
-					<a href = "#parks">Section1</a>
-				</li>
-				<li class= "menu-item">
-					<a href = "#aboutMe">Section2</a>
-				</li>
-				<li class= "menu-item">
-					<a href = "#contact">Section3</a>
-				</li>
-			</ul>
-		</nav>
-		<section class="intro" id="parks">
-      <div class="row park">
-        <h1 class="h1-title section">Nice parks</h1>
-        <h2>Park 1</h2>
-        <div class = "content-text">
-			    Some text content.
-			  </div>
-			  <div class = "content-image">
-			    A picture.
-			  </div>
-         <div class = "timeline-nav">
-          My timeline.
+<<html lang="en">
+<head>
+  <title>Daniel Ansell one-pager</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li class="menu-item menu-logo">
+        <a href="#intro"><img class="menu-logo" src="https://dlra.github.io/img/ParksTree.png"></a>
+        <li class="menu-item">
+          <a href="#parks">London Parks</a>
+        </li>
+    </ul>
+  </nav>
+  <section id="intro" class="intro section">
+    <h1 class=intro-heading>London Parks</h1>
+    <div class=intro-motivation>
+      <h2>What I love about London is it parks. There are so many, and they are quite varied. </h2>
+    </div>
+  </section>
+  <section class="" id="parks">
+    <!-- section -->
+    <div class="parkSectionContainer">
+      <!-- subsection header -->
+      <h2 class="content-text park-top">Burgess Park</h2>
+      <!-- subsection div -->
+      <div class="row parkUnitContainer">
+        <div class="content-text">
+         Burgess Park was built between the 1950s and 1980s. It came about as a result of the Abecrombie Plan in 1943, which set out ideas for open spaces in London. It is still a 'live' park, inasmuch as it is unfinished in its development.
         </div>
-      </div>
-      <div class="row" class="park">
-        <h2>Park 2</h2>
-        <div class = "content-text">
-			    Some text content.
-			  </div>
-			  <div class = "content-image">
-			    A picture.
-			  </div>
-         <div class = "timeline-nav">
-          My timeline.
+        <div class="content-image-container">
+<!--           <div class="content-image showing"> -->
+          <img class="content-image showing" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/1945_map_of_street_layout_around_Burgess_Park%2C_Southwark.png" alt="1945 map of street layout around Burgess Park, Southwark.png">
         </div>
-      </div>
-      <div class="row" class="park">
-        <h2>Park 3</h2>
-        <div class = "content-text">
-			    Some text content.
-			  </div>
-			  <div class = "content-image">
-			    A picture.
-			  </div>
-         <div class = "timeline-nav">
-          My timeline.
+        <!-- image container closed -->
+        <div >
+<!--           <img class="content-image hidden"> -->
         </div>
+        <div "content-image hidden"></div>
+        <div "content-image hidden"></div>
+      <!-- unit container closed -->
       </div>
-		</section>
-		<section class="section" id="aboutMe">
-      <h1>About Me</h1>
-		</section>
-		<section class="section" id="contact">
-      <h1>Contact</h1>
-		</section>
-		<footer>
-		</footer>
-	</body>
+      <div class="timeline-nav">
+        <button type="button" class="button">Origins
+        </button>
+        <button type="button" class="button">Kiln</button>
+        <button type="button" class="button">Lake</button>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="aboutMe">
+    <h1>About Me</h1>
+    <p class="profile">A little late to the party with producing this website, it was a bit rushed in the end and is still a work in progress. I only found out about Founders and Coders recently, a friend mentioned, I knew it was something I had to apply to. Having completed my PhD in 2014&mdash;having
+      spent a few years mostly playing around with <a href="http://www.independent.co.uk/news/science/the-graphene-story-how-andrei-geim-and-kostya-novoselov-hit-on-a-scientific-breakthrough-that-8539743.html">sticky tape and bits of pencil lead</a>&mdash;I
+      realised direct scientific research wasn't for me. Cue some wilderness years (bar work, exploring). I've always loved logic and analysis; and really do like the incremental and tangible progress that is made from a hard day's graft at the keyboard&mdash;
+      ok, on a good day. We could be a match made in heaven! Check me out at <a href=h ttps://www.freecodecamp.com/dlra>freeCodeCamp</a> and <a href="https://www.codewars.com/users/dlra">codewars</a>. I look forward to hearing from you.
+    </p>
+  </section>
+  <footer>
+  </footer>
+</body>
+
 </html>
