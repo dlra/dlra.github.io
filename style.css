@@ -69,7 +69,7 @@ ul {
 	height: 70px;
   width: 100%;
   line-height: 38px;
-  margin-top: -26px;
+  margin-top: -70px;
   margin-left: -8px;
   z-index: 5;
   
@@ -110,7 +110,7 @@ ul {
   height: 70px;
 } */
 .intro {
-  margin-top : 40px;
+  margin-top : 70px;
   margin-left: -8px;
   margin-right: -8px;
   color: #402;
@@ -176,7 +176,7 @@ ul {
   top: 10%;
   
 }
-.content-text {
+div.content-text {
 /* 	background-color: #ddd; */
 	height : 200px;
 	width : 40%;
@@ -185,6 +185,9 @@ ul {
 	padding: 5px;
 	margin: 5px 0;
 	text-align: center;
+  font-family: sans-serif;
+}
+h2.content-text {
   font-family: sans-serif;
 }
 #intro {
@@ -233,10 +236,13 @@ p.profile a {
   .content-image-container {
     width: 70%;
   }
-  .content-text {
+  div.content-text {
     width: 100%;
     height: auto;
     font-size: 1.2rem;
+  }
+  h2.content-text {
+    font-size: 1.5rem;
   }
  p.profile {
     font-size: 1rem;
@@ -246,6 +252,9 @@ p.profile a {
   h1 {
     font-size: 3rem;
   }
+  div.content-text {
+    font-size: 1.2rem;
+  }
   .parkSectionContainer {
     width: 750px;
     margin-left: auto;
@@ -254,8 +263,8 @@ p.profile a {
   .parkUnitContainer {
     width: 100%;
   }
-  .content-text {
-    font-size: 1.2rem;
+  h2.content-text {
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1000px){
@@ -264,8 +273,11 @@ p.profile a {
     margin-left: auto;
     margin-right: auto;
   }
-  .content-text {
+  div.content-text {
     font-size: 1.5rem;
+  }
+  h2.content-text {
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1200px){
@@ -274,5 +286,10 @@ p.profile a {
     margin-left: auto;
     margin-right: auto;
   }
+  div.content-text {
+    font-size: 1.5rem;
+  }
+  h2.content-text {
+    font-size: 2rem;
+  }
 }
-
