@@ -1,5 +1,5 @@
 # London Parks
-Since living in London I've come to love its parks. They come in all different shapes and sizes and terrains, and have different things to offer. I'll try to cover a few of them, and give reasons for why I like them.
+Since living in London I've come to love its parks. They come in all different shapes and sizes and terrains, and have different things to offer. I'll try to cover a few of them, give reasons for why I like them and display all this on my <a href="https://dlra.github.io>one pager</a>.
 
 ## Layout
 The idea is, after an intro, to be able to scroll down and go through each park one-by-one. The functionality will be simple:
