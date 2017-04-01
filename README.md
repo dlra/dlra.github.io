@@ -3,8 +3,8 @@ Since living in London I've come to love its parks. They come in all different s
 
 ## Layout
 The idea is, after an intro, to be able to scroll down and go through each park one-by-one. The functionality will be simple:
-	* Text--Images--Menu. Each button on the menu should be attached to an image and corresponsing text. 3 or 4 buttons.
-	* The layout of the buttons will be responsive to the screen display (e.g., desktop, tablet or phone).
+* Text--Images--Menu. Each button on the menu should be attached to an image and corresponsing text. 3 or 4 buttons.
+* The layout of the buttons will be responsive to the screen display (e.g., desktop, tablet or phone).
 
 ### To do
 A few things need fleshing out and tidying up. Specifically:
