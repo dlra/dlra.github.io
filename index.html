@@ -2,12 +2,13 @@
 <head>
 	<title>Daniel Ansell one-pager</title>
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<nav class="menu">
 		<ul>
 			<li class="menu-item menu-logo">
-				<a href="#intro"><img class="menu-logo" src= "img/ParksTree.png"></a>
+				<a href="#intro"><img class="menu-logo" src=				"https://dlra.github.io/img/ParksTree.png"></a>
 			<li class="menu-item">
 				<a href="#parks">London Parks</a>
 			</li>
@@ -30,26 +31,26 @@
 			<!-- This div is for the single unit, for one park-->
 			<div class="parkUnitContainer">
 				<div class="contentTextContainer">
-					<div id="BPOrigins" class="content-text showing">
+					<div id="BPOrigins" class="content-text hidden">
 						Burgess Park was built between the 1950s and 1980s. It came about as a result of the Abecrombie Plan in 1943, which set out ideas for open spaces in London. It is still a 'live' park, inasmuch as it is unfinished in its development.
 					</div>
-					<div id = "BPKiln" class="content-text hidden">
+					<div id = "BPKiln" class="content-text showing">
 						The lime kiln dates back to the early 19th century, when quicklime would be <a href=http://www.exploringsouthwark.co.uk/lime-kiln/4587624086>produced locally</a>. The kiln resides next to the road (which runs the length of the park) which formally was the terminal of the Grand Surrey Canal.
 					</div>
 				</div>
 				<!-- image container open -->
 				<div class="contentImageContainer">
-					<div id="BPOrigins-img"class="content-image showing">
+					<div id="BPOrigins-img"class="content-image hidden">
 						<img src = "https://upload.wikimedia.org/wikipedia/commons/1/1f/1945_map_of_street_layout_around_Burgess_Park%2C_Southwark.png" alt="1945 map of street layout around Burgess Park, Southwark.png">
 					</div>
-					<div id="BPKiln-img" class="content-image hidden"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Lime_Kiln_1.jpg/1200px-Lime_Kiln_1.jpg" alt="Lime Kiln 1.jpg">
+					<div id="BPKiln-img" class="content-image showing"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Lime_Kiln_1.jpg/1200px-Lime_Kiln_1.jpg" alt="Lime Kiln 1.jpg">
 					</div>
 					<div "content-image hidden"></div>
 					<div "content-image hidden"></div>
 				<!-- image container closed -->
 				</div>
 				<div class="timeline-nav">
-					<button id="BPOrigins-btn" type="button" class="button">Origins
+					<button id="BPOrigins-btn" type="button" class="button active">Origins
 					</button>
 					<button id="BPKiln-btn" type="button" class="button">Kiln</button>
 					<button id="BPLake-btn" type="button" class="button" disabled>Lake</button>

@@ -2,6 +2,8 @@
 Mobile First (attempt)
 ******************************/
 
+* {
+    box-sizing: border-box;
 body {
   width: 95%;
   text-align: center;
