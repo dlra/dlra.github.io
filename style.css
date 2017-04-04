@@ -3,6 +3,7 @@ Mobile First (attempt)
 ******************************/
 
 body {
+  width: 95%;
   text-align: center;
   background-color: #afa;
 /*   width: 100%; */
@@ -25,7 +26,7 @@ footer {
   background-color: #151;
   margin-bottom: -100px;
   margin-left: -8px;
-  margin-right: -8px;
+  margin-right: -32px;
   padding: 0;
 }
 ul {
@@ -61,7 +62,7 @@ ul {
 .button:hover {
   background-color: #8CAF80; 
 }
-.button:active {
+.button.active {
   background-color: #8CAF80; 
 }
 .menu {
@@ -111,9 +112,10 @@ ul {
   height: 70px;
 } */
 .intro {
+/*   width: 95%; */
   margin-top : 70px;
   margin-left: -8px;
-  margin-right: -8px;
+  margin-right: -32px;
   color: #402;
   background-color: #afa;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Midwinter_sunshine_in_Bushy_Park%2C_Teddington_P2120008.JPG/2048px-Midwinter_sunshine_in_Bushy_Park%2C_Teddington_P2120008.JPG);
@@ -140,10 +142,12 @@ ul {
 .parkSectionContainer {
 /*   background-color: #333; */
   height: 400px;
+  display: inline block;
 }
 .parkUnitContainer {
 /*   height: 200px; */
 /*   background-color: #444; */
+   display: inline block;
 }
 .timeline-nav{
 /*   background-color: #ddd; */
@@ -156,7 +160,7 @@ ul {
 	text-align: center;
 }
 .contentImageContainer {
-/*	background-color: #111;	*/
+	background-color: #111;
 	height : 200px;
 	position: relative;
   width : 40%;
@@ -168,17 +172,17 @@ ul {
 }
 .content-image {
   position: absolute;
-/*   width: 100% */
+  width: 100%
 }
 .contentImageContainer img {
-/*   position: absolute; */
-/*   height: 100%; */
+/*    position: absolute;  */
+   height: 100%; 
   max-width: 100%;
   width: 100%;
   overflow: hidden;
   max-height: 100%;
   height: 100%;
-/*   position: absolute; */
+/*    position: absolute;  */
   top: 10%;
   
 }
@@ -189,21 +193,21 @@ ul {
 	float : left;
 	border : 1px #333;
 	padding: 5px;
-	margin: 5px 2% 5px 0;
+	margin: 5px 0 5px 0;
 	text-align: center;
 	font-family: sans-serif;
   position: relative;
 }
 .content-text {
   position: absolute;
-  width: 100%;
+  width: 95%;
   
 }
 .park-title {
   font-family: sans-serif;
 }
 .showing {
-  opacity: 1;
+  opacity: 0.5;
   /* add fade?? */
 }
 .hidden {
@@ -258,12 +262,19 @@ p.profile a {
 	} */
 /* } */
 @media screen and (max-width: 768px){
+  .intro-heading {
+    padding-left: 30px;
+  }
+  .intro-motivation {
+    padding-top: 0;
+    width: 60%;
+  }
   .contentImageContainer {
     width: 70%;
   }
   .contentTextContainer {
     width: 100%;
-    height: auto;
+    height: 110px;
     font-size: 1.2rem;
     clear: none;
   }

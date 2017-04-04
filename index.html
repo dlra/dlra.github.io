@@ -66,35 +66,33 @@
 	</footer>
 	<script>
 		/* Kiln button click event */
-		document.getElementById("BPKiln-btn").onclick = function () {
-			/* image */
-			if(document.getElementById("BPKiln-img").className == "content-image hidden") {
+		document.getElementById("BPKiln-btn").addEventListener('click', function () {
+			if (document.getElementById("BPKiln-btn").className == "button") {
+				document.getElementById("BPKiln-btn").className = "button active";
+				document.getElementById("BPOrigins-btn").className = "button";
+				document.getElementById("BPLake-btn").className = "button";
 				document.getElementById("BPKiln-img").className = "content-image showing";
 				document.getElementById("BPOrigins-img").className = "content-image hidden";
 				document.getElementById("BPLake-img").className = "content-image hidden";
-			} 
-		/* text */
-			if(document.getElementById("BPKiln").className == "content-text hidden") {
 				document.getElementById("BPKiln").className = "content-text showing";
 				document.getElementById("BPOrigins").className = "content-text hidden";
 				document.getElementById("BPLake").className = "content-text hidden";
-			} 
-		}	
+			}
+		});
 		/* Origins button click event */
-		document.getElementById("BPOrigins-btn").onclick = function () {
-			/* image */
-			if(document.getElementById("BPOrigins-img").className == "content-image hidden") {
+		document.getElementById("BPOrigins-btn").addEventListener('click', function () {
+			if (document.getElementById("BPOrigins-btn").className == "button") {
+				document.getElementById("BPOrigins-btn").className = "button active";
+				document.getElementById("BPKiln-btn").className = "button";
+				document.getElementById("BPLake-btn").className = "button";
 				document.getElementById("BPOrigins-img").className = "content-image showing";
 				document.getElementById("BPKiln-img").className = "content-image hidden";
 				document.getElementById("BPLake-img").className = "content-image hidden";
-			} 
-			/* text */
-			if(document.getElementById("BPOrigins").className == "content-text hidden") {
 				document.getElementById("BPOrigins").className = "content-text showing";
 				document.getElementById("BPKiln").className = "content-text hidden";
 				document.getElementById("BPLake").className = "content-text hidden";
 			} 
-		}
+		});
 	</script>
 </body>
 </html>
