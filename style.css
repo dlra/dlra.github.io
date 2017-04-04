@@ -6,7 +6,7 @@ Mobile First (attempt)
     box-sizing: border-box;
 }
 body {
-  width: 95%;
+  width: 100%;
   text-align: center;
   background-color: #afa;
 /*   width: 100%; */
@@ -114,11 +114,16 @@ ul {
 /* li.menu-logo a {
   height: 70px;
 } */
+.section.intro {
+  height: 1600px;
+}
 .intro {
-/*   width: 95%; */
+/*   width: 100%; */
+/*   height:  */
   margin-top : 70px;
   margin-left: -8px;
   margin-right: -32px;
+/*   margin-bottom: 50px; */
   color: #402;
   background-color: #afa;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Midwinter_sunshine_in_Bushy_Park%2C_Teddington_P2120008.JPG/2048px-Midwinter_sunshine_in_Bushy_Park%2C_Teddington_P2120008.JPG);
@@ -128,6 +133,7 @@ ul {
   background-size: cover;
 }
 .intro-heading {
+  width: 90%;
   color: #ed260b;
   text-transform: uppercase;
   font-family: Helvetica, sans-serif;
@@ -152,7 +158,7 @@ ul {
 /*   background-color: #444; */
    display: inline block;
 }
-.timeline-nav{
+.timeline-nav.button{
 /*   background-color: #ddd; */
 	height : 200px;
 	width : 15%;
@@ -163,7 +169,7 @@ ul {
 	text-align: center;
 }
 .contentImageContainer {
-	/* background-color: #111; */
+/* 	background-color: #111; */
 	height : 200px;
 	position: relative;
   width : 40%;
@@ -179,14 +185,14 @@ ul {
 }
 .contentImageContainer img {
 /*    position: absolute;  */
-   height: 100%; 
-  max-width: 100%;
-  width: 100%;
+/*    height: 100%;  */
+/*   max-width: 100%; */
+  width: 80%;
   overflow: hidden;
-  max-height: 100%;
-  height: 100%;
+/*   max-height: 100%; */
+/*   height: 100%; */
 /*    position: absolute;  */
-  top: 10%;
+/*   top: 10%; */
   
 }
 .contentTextContainer {
@@ -221,8 +227,8 @@ ul {
   height: 600px;
 }
 #aboutMe {
-  height: 494px;
-  padding-top: 70px;
+  height: 600px;
+  padding-top: 120px;
 }
 p.profile {
   padding: 0 10%;
@@ -269,17 +275,21 @@ p.profile a {
     padding-left: 30px;
   }
   .intro-motivation {
+    margin-top: -60px;
     padding-top: 0;
     width: 60%;
   }
   .contentImageContainer {
-    width: 70%;
+    width: 95%;
+    margin: 0 5%;
   }
   .contentTextContainer {
-    width: 100%;
-    height: 110px;
+    width: 90%;
+    height: 200px;
     font-size: 1.2rem;
-    clear: none;
+    clear: both;
+    margin: 0% 5% 10%;
+   
   }
   .park-title {
     font-size: 1.5rem;
