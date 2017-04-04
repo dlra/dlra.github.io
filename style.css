@@ -31,13 +31,11 @@ footer {
 ul {
   display: block;
   height: 100%
-}
-/* ul {
-	transition-property: all;
+	/*transition-property: all;
 	transition-duration: 1.2s;
 	transition-timing-function: ease;
-	transition-delay: initial;
-} */
+	transition-delay: initial; */
+}
 .section {
 /*   padding: 2%; */
 }
@@ -61,6 +59,9 @@ ul {
     margin: 2px 0;
 }
 .button:hover {
+  background-color: #8CAF80; 
+}
+.button:active {
   background-color: #8CAF80; 
 }
 .menu {
@@ -154,10 +155,10 @@ ul {
 	margin: 5px 0;
 	text-align: center;
 }
-.content-image-container {
-/* 	background-color: #222; */
+.contentImageContainer {
+	background-color: #111;
 	height : 200px;
-/* 	position: relative; */
+	position: relative;
   width : 40%;
 	float : left;
 /* 	border : 1px #333; */
@@ -165,30 +166,49 @@ ul {
 	margin: 5px 0;
 	text-align: center;
 }
-.content-image-container img {
+.content-image {
+  position: absolute;
+/*   width: 100% */
+}
+.contentImageContainer img {
 /*   position: absolute; */
 /*   height: 100%; */
   max-width: 100%;
-  width: auto;
+  width: 100%;
+  overflow: hidden;
   max-height: 100%;
-  height: auto;
+  height: 100%;
 /*   position: absolute; */
   top: 10%;
   
 }
-div.content-text {
+.contentTextContainer {
 /* 	background-color: #ddd; */
 	height : 200px;
 	width : 40%;
 	float : left;
 	border : 1px #333;
 	padding: 5px;
-	margin: 5px 0;
+	margin: 5px 2% 5px 0;
 	text-align: center;
+	font-family: sans-serif;
+  position: relative;
+}
+.content-text {
+  position: absolute;
+  width: 100%;
+  
+}
+.park-title {
   font-family: sans-serif;
 }
-h2.content-text {
-  font-family: sans-serif;
+.showing {
+  opacity: 0.5;
+  /* add fade?? */
+}
+.hidden {
+  opacity : 0;
+  /* add fade?? */
 }
 #intro {
   height: 600px;
@@ -204,6 +224,11 @@ p.profile {
   font-family: sans-serif, Helvetica;
 }
 p.profile a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+#BPKiln a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
@@ -225,23 +250,24 @@ p.profile a {
 	.timeline-nav{
 		width : 15%;
 	}
-	#content-image-container {
+	#contentImageContainer {
 		width : 48%;
 	}
-	.content-text {
+	.contentTextContainer {
 		width : 40%;
 	} */
 /* } */
 @media screen and (max-width: 768px){
-  .content-image-container {
+  .contentImageContainer {
     width: 70%;
   }
-  div.content-text {
+  .contentTextContainer {
     width: 100%;
     height: auto;
     font-size: 1.2rem;
+    clear: none;
   }
-  h2.content-text {
+  .park-title {
     font-size: 1.5rem;
   }
  p.profile {
@@ -252,8 +278,9 @@ p.profile a {
   h1 {
     font-size: 3rem;
   }
-  div.content-text {
+  .contentTextContainer {
     font-size: 1.2rem;
+    clear: none;
   }
   .parkSectionContainer {
     width: 750px;
@@ -263,7 +290,7 @@ p.profile a {
   .parkUnitContainer {
     width: 100%;
   }
-  h2.content-text {
+  .park-title {
     font-size: 1.5rem;
   }
 }
@@ -273,11 +300,15 @@ p.profile a {
     margin-left: auto;
     margin-right: auto;
   }
-  div.content-text {
+  .contentTextContainer {
     font-size: 1.5rem;
+    clear: none;
   }
-  h2.content-text {
+  .park-title {
     font-size: 2rem;
+  }
+  p.profile {
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px){
@@ -286,10 +317,15 @@ p.profile a {
     margin-left: auto;
     margin-right: auto;
   }
-  div.content-text {
+  .contentTextContainer {
     font-size: 1.5rem;
+    clear: none;
   }
-  h2.content-text {
+  .park-title {
     font-size: 2rem;
   }
+  p.profile {
+    font-size: 1.5rem;
+  }
 }
+

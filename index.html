@@ -1,65 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <title>Daniel Ansell one-pager</title>
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<title>Daniel Ansell one-pager</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 <body>
-  <nav class="menu">
-    <ul>
-      <li class="menu-item menu-logo">
-        <a href="#intro"><img class="menu-logo" src="https://dlra.github.io/img/ParksTree.png"></a>
-        <li class="menu-item">
-          <a href="#parks">London Parks</a>
-        </li>
-    </ul>
-  </nav>
-  <section id="intro" class="intro section">
-    <h1 class=intro-heading>London Parks</h1>
-    <div class=intro-motivation>
-      <h2>What I love about London is it parks. There are so many, and they are quite varied. </h2>
-    </div>
-  </section>
-  <section class="" id="parks">
-    <!-- section -->
-    <div class="parkSectionContainer">
-      <!-- subsection header -->
-      <h2 class="content-text park-top">Burgess Park</h2>
-      <!-- subsection div -->
-      <div class="row parkUnitContainer">
-        <div class="content-text">
-         Burgess Park was built between the 1950s and 1980s. It came about as a result of the Abecrombie Plan in 1943, which set out ideas for open spaces in London. It is still a 'live' park, inasmuch as it is unfinished in its development.
-        </div>
-        <div class="content-image-container">
-<!--           <div class="content-image showing"> -->
-          <img class="content-image showing" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/1945_map_of_street_layout_around_Burgess_Park%2C_Southwark.png" alt="1945 map of street layout around Burgess Park, Southwark.png">
-        </div>
-        <!-- image container closed -->
-        <div >
-<!--           <img class="content-image hidden"> -->
-        </div>
-        <div "content-image hidden"></div>
-        <div "content-image hidden"></div>
-      <!-- unit container closed -->
-      </div>
-      <div class="timeline-nav">
-        <button type="button" class="button">Origins
-        </button>
-        <button type="button" class="button">Kiln</button>
-        <button type="button" class="button">Lake</button>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="aboutMe">
-    <h1>About Me</h1>
-    <p class="profile">A little late to the party with producing this website, it was a bit rushed in the end and is still a work in progress. I only found out about Founders and Coders recently, a friend mentioned, I knew it was something I had to apply to. Having completed my PhD in 2014&mdash;having
-      spent a few years mostly playing around with <a href="http://www.independent.co.uk/news/science/the-graphene-story-how-andrei-geim-and-kostya-novoselov-hit-on-a-scientific-breakthrough-that-8539743.html">sticky tape and bits of pencil lead</a>&mdash;I
-      realised direct scientific research wasn't for me. Cue some wilderness years (bar work, exploring). I've always loved logic and analysis; and really do like the incremental and tangible progress that is made from a hard day's graft at the keyboard&mdash;
-      ok, on a good day. We could be a match made in heaven! Check me out at <a href=h ttps://www.freecodecamp.com/dlra>freeCodeCamp</a> and <a href="https://www.codewars.com/users/dlra">codewars</a>. I look forward to hearing from you.
-    </p>
-  </section>
-  <footer>
-  </footer>
+	<nav class="menu">
+		<ul>
+			<li class="menu-item menu-logo">
+				<a href="#intro"><img class="menu-logo" src= "img/ParksTree.png"></a>
+			<li class="menu-item">
+				<a href="#parks">London Parks</a>
+			</li>
+		</ul>
+	</nav>
+	<section id="intro" class="intro section">
+		<h1 class=intro-heading>London Parks</h1>
+			<div class=intro-motivation>
+				<h2>What I love about London is it parks. There are so many, and they are quite varied.</h2>
+			</div>
+	</section>
+	<!-- section -->
+	<section class="" id="parks">	
+		<!-- This div should contain the whole of the section??
+		 Could not "section just do that?? -->
+		<div class="parkSectionContainer ">
+			<!-- subsection header -->
+			<h2 class="park-top park-title">Burgess Park</h2>
+			<!-- subsection div -->
+			<!-- This div is for the single unit, for one park-->
+			<div class="parkUnitContainer">
+				<div class="contentTextContainer">
+					<div id="BPOrigins" class="content-text showing">
+						Burgess Park was built between the 1950s and 1980s. It came about as a result of the Abecrombie Plan in 1943, which set out ideas for open spaces in London. It is still a 'live' park, inasmuch as it is unfinished in its development.
+					</div>
+					<div id = "BPKiln" class="content-text hidden">
+						The lime kiln dates back to the early 19th century, when quicklime would be <a href=http://www.exploringsouthwark.co.uk/lime-kiln/4587624086>produced locally</a>. The kiln resides next to the road (which runs the length of the park) which formally was the terminal of the Grand Surrey Canal.
+					</div>
+				</div>
+				<!-- image container open -->
+				<div class="contentImageContainer">
+					<div id="BPOrigins-img"class="content-image showing">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/1/1f/1945_map_of_street_layout_around_Burgess_Park%2C_Southwark.png" alt="1945 map of street layout around Burgess Park, Southwark.png">
+					</div>
+					<div id="BPKiln-img" class="content-image hidden"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Lime_Kiln_1.jpg/1200px-Lime_Kiln_1.jpg" alt="Lime Kiln 1.jpg">
+					</div>
+					<div "content-image hidden"></div>
+					<div "content-image hidden"></div>
+				<!-- image container closed -->
+				</div>
+				<div class="timeline-nav">
+					<button id="BPOrigins-btn" type="button" class="button">Origins
+					</button>
+					<button id="BPKiln-btn" type="button" class="button">Kiln</button>
+					<button id="BPLake-btn" type="button" class="button" disabled>Lake</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" id="aboutMe">
+		<h1>About Me</h1>
+		<p class="profile">A little late to the party with producing this website, it was a bit rushed in the end and is still a work in progress. I only found out about Founders and Coders recently, a friend mentioned, I knew it was something I had to apply to. Having completed my PhD in 2014&mdash;having spent a few years mostly playing around with <a href="http://www.independent.co.uk/news/science/the-graphene-story-how-andrei-geim-and-kostya-novoselov-hit-on-a-scientific-breakthrough-that-8539743.html">sticky tape and bits of pencil lead</a>&mdash;I realised direct scientific research wasn't for me. Cue some wilderness years (bar work, exploring). I've always loved logic and analysis; and really do like the incremental and tangible progress that is made from a hard day's graft at the keyboard&mdash; ok, on a good day. We could be a match made in heaven! Check me out at <a href=https://www.freecodecamp.com/dlra>freeCodeCamp</a> and <a href="https://www.codewars.com/users/dlra">codewars</a>. I look forward to hearing from you.
+		</p>
+	</section>
+	<footer>
+	</footer>
+	<script>
+		/* Kiln button click event */
+		document.getElementById("BPKiln-btn").onclick = function () {
+			/* image */
+			if(document.getElementById("BPKiln-img").className == "content-image hidden") {
+				document.getElementById("BPKiln-img").className = "content-image showing";
+				document.getElementById("BPOrigins-img").className = "content-image hidden";
+				document.getElementById("BPLake-img").className = "content-image hidden";
+			} 
+		/* text */
+			if(document.getElementById("BPKiln").className == "content-text hidden") {
+				document.getElementById("BPKiln").className = "content-text showing";
+				document.getElementById("BPOrigins").className = "content-text hidden";
+				document.getElementById("BPLake").className = "content-text hidden";
+			} 
+		}	
+/* Origins button click event */
+		document.getElementById("BPOrigins-btn").onclick = function () {
+			/* image */
+			if(document.getElementById("BPOrigins-img").className == "content-image hidden") {
+				document.getElementById("BPOrigins-img").className = "content-image showing";
+				document.getElementById("BPKiln-img").className = "content-image hidden";
+				document.getElementById("BPLake-img").className = "content-image hidden";
+			} 
+			/* text */
+			if(document.getElementById("BPOrigins").className == "content-text hidden") {
+				document.getElementById("BPOrigins").className = "content-text showing";
+				document.getElementById("BPKiln").className = "content-text hidden";
+				document.getElementById("BPLake").className = "content-text hidden";
+			} 
+		}
+	</script>
 </body>
-
 </html>
