@@ -334,7 +334,9 @@ p.profile a {
   p.profile {
     font-size: 1.5rem;
   }
-}
+  .button {
+    width: 190px;
+    font-size: 24px;
 @media screen and (min-width: 1200px){
   .parkSectionContainer {
     width: 1170px;
@@ -351,5 +353,9 @@ p.profile a {
   p.profile {
     font-size: 1.5rem;
   }
+  .button {
+    width: 200px;
+    font-size: 24px;
 }
+
 
