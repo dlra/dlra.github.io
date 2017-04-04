@@ -163,7 +163,7 @@ ul {
 	text-align: center;
 }
 .contentImageContainer {
-	background-color: #111;
+	/* background-color: #111; */
 	height : 200px;
 	position: relative;
   width : 40%;
@@ -210,7 +210,7 @@ ul {
   font-family: sans-serif;
 }
 .showing {
-  opacity: 0.5;
+  opacity: 1;
   /* add fade?? */
 }
 .hidden {
